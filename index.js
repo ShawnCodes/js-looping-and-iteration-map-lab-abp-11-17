@@ -15,6 +15,10 @@
   }
 
   function attributesToPhrase(name, hometown){
+return drivers.map(function(){
   let driverName = driver.name
   let driverHometown = driver.hometown
+
+  return '${driverName} is from ${driverHometown}'
+})
 }
